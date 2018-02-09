@@ -31,24 +31,23 @@ function teamChange() {
 teamChange();
 
 // function navIsFixed() {
-//     if (screen.width > 991.98) {
+//      if (screen.width > 991.98) {
 //     document.getElementById("nav-fixed").navbar += "sticky";
-//     }
-// }
+//      }
+//  }
 
-// navIsFixed();
+//  navIsFixed();
+//  window.onscroll = function() {
+//      menuFunction();
+//  };
 
-// window.onscroll = function() {
-//     menuFunction();
-// };
+//  var navbar = document.getElementById("navbarNav");
+//  var sticky = navbar.offsetTop;
 
-// var navbar = document.getElementById("navbarNav");
-// var sticky = navbar.offsetTop;
-
-// function menuFunction() {
+//  function menuFunction() {
 //   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky")
+//       navbar.classList.add("sticky");
 //   } else {
-//     navbar.classList.remove("sticky");
+//      navbar.classList.remove("sticky");
 //   }
-// }
+//  }

@@ -12,7 +12,7 @@
     padding: 0;
 }
 
-@media (max-width: 991.97px) {
+@media (max-width: 1150.97px) {
     .nav-pills {
         background-color: #232325;
         color: rgba(255, 255, 255, 0.8);
@@ -49,7 +49,17 @@
     }
 }
 
-@media (min-width: 991.98px) {
+.nav-pills a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-pills a:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1150.98px) {
     .nav-pills {
         background-color: #232325;
         color: rgba(255, 255, 255, 0.8);
@@ -118,18 +128,13 @@
 
 .navbar {
     display: flex;
-    align-content: center;
+    align-content: flex-end;
     text-transform: uppercase;
     color: #232325;
 }
 
-/*.sticky {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 75%*/
-/*}*/
     
-@media (min-width: 991.98px) {
+@media (min-width: 1150.98px) {
     #nav-about-us {
         margin-left: 12rem;
     }
@@ -204,6 +209,10 @@
         font-size: 1.3rem;
         padding-bottom: 2rem;
     }
+    
+    #text-muted {
+    font-size: 1.3rem;
+}
 }
 
 #primary {
@@ -453,40 +462,37 @@
     }
 
     #lida {
-        grid-area: lida;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 2rem 0;
+        margin:0.8rem;
     }
 
     #sofia {
-        grid-area: sofia;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 2rem 0;
+        margin:0.7rem;
     }
 
     #maria {
-        grid-area: maria;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 2rem 0;
+        margin: 1.2rem;
     }
 
     #viktoria {
-        grid-area: viktoria;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 2rem 0;
+        margin: 1.2rem;
     }
+    
     #team-title-sec p {
         text-transform: uppercase;
         font-size: 1.5rem;
@@ -504,6 +510,12 @@
     .gallery-title {
         display: none;
     }
+    
+    .gallery-title1{
+        display: flex;
+        justify-content:center;
+    }
+    
 }
 
 @media (min-width: 991.97px) {
@@ -520,8 +532,9 @@
     .photo-gallery {
         display: grid;
         grid-template-rows: 10rem 10rem 10rem 10rem 10rem 10rem 10rem 10rem;
-        grid-template-columns: 9rem 9rem 9rem 9rem 9rem 9rem;
-        grid-gap: 1.84rem;
+        grid-template-columns: 14% 14% 14% 14% 14% 14%;
+        grid-column-gap: 3.23%;
+        grid-row-gap: 1rem;
     }
 
     #gallery-title {
@@ -617,17 +630,18 @@
 }
 
 
-@media (min-width:991.98px) {
+@media (min-width:800.98px) {
     .contact-block-bg {
         background-color: #232325;
         margin-top: 3rem;
-        padding: 6rem;
+        padding: 10%;
         position: relative;
     }
 
     .contact-block {
         background-color: rgb(255, 255, 255);
-        width: 45rem;
+        width: 100%;
+        height: 30rem;
         margin: auto;
         border-radius: 5px;
         display: grid;
@@ -642,7 +656,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 3rem;
+        margin-left: 10%;
     }
 
     #icon-contact {
@@ -651,12 +665,12 @@
         align-items: center;
         color: #D7D7D7;
         font-size: 2rem;
-        width: 5rem;
-        height: 5rem;
+        width: 12vh;
+        height: 12vh;
         background-color: #232325;
         border-radius: 100%;
         transition: ease 1s;
-        margin: 1rem 0.7rem 3rem 0;
+        margin: 7% 3% 10% 0;
     }
 
     #icon-contact:hover {
@@ -666,7 +680,7 @@
 
     .content-contact {
         grid-area: 2/1/3/2;
-        margin-left: 3rem;
+        margin-left: 7%;
     }
 
     .content-contact p:first-child {
@@ -679,20 +693,20 @@
     .vl {
         grid-area: 1/2/4/3;
         border-left: 0.02rem solid #232325;
-        height: 27rem;
+        height: 95%;
         margin-top: 0.5rem;
     }
 
     .formaction {
         grid-area: 1/3/4/4;
-        margin-left: 2rem;
+        margin-left: 5%;
     }
 
     input[type=text],
     input[type=email],
     select,
     textarea {
-        width: 15rem;
+        width: 90%;
         padding: 0.2rem 1.2rem;
         display: block;
         border: 0.1rem solid #f3d448;
@@ -708,15 +722,21 @@
         border-radius: 4px;
         transition: ease 0.5s;
     }
-
+    
+    option{
+        background-color: #f3d448;
+        color: #232325;
+    }
 
     option:hover {
         border: 1rem solid #232325;
+        background-color: #f3d448;
+        color: #232325;
     }
 
     #message {
-        width: 15rem;
-        height: 8rem;
+        width: 90%;
+        height: 25%;
     }
 
     #button-contact {
@@ -744,10 +764,16 @@
     }
 }
 
-@media (max-width:991.97px) {
+@media (max-width:800.97px) {
     .contact-block {
         padding: 0 2rem;
         background-color: #232325;
+    }
+    
+    .formaction {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
     }
 
     .icons-contact {
@@ -767,9 +793,6 @@
         font-weight: 600;
     }
 
-    .formaction {
-        margin-left: 2rem;
-    }
 
     input[type=text],
     input[type=email],
@@ -842,21 +865,6 @@
         padding-top: 2rem;
     }
 
-    .menu-footer li {
-        list-style-type: none;
-        font-size: 1.3rem;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .menu-footer li:hover {
-        color: rgb(255, 255, 255);
-    }
-
-    .menu-footer li:first-child {
-        color: #f3d448;
-        font-size: 1.5rem;
-    }
-
     .contact-footer p {
         list-style-type: none;
         font-size: 1.3rem;
@@ -892,7 +900,7 @@
 
     .footer-phrase {
         color: #f3d448;
-        font-size: 1rem;
+        font-size: 1.4rem;
         align-self: center;
     }
 }
